@@ -34,10 +34,11 @@ body {
   gap: 14px;
 }
 
-.sparkles {
-  color: var(--primary2);
-  font-size: 24px;
-  letter-spacing: 1px;
+
+.logo-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
 }
 
 .brand h1 {
@@ -104,4 +105,5 @@ body {
   .brand h1 { transform: none; font-size: 22px; }
   .headline, .subtext { transform: none; font-size: 18px; padding: 0 14px; }
 }
+
 
