@@ -71,19 +71,14 @@ body {
 }
 
 .icon-wrap {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
   display: grid;
   place-items: center;
-  background: #dfe4fb;
-  color: var(--primary2);
-  font-size: 30px;
 }
 
+
 .center-logo {
-  width: 44px;
-  height: 44px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
 }
 
@@ -111,6 +106,7 @@ body {
   .brand h1 { transform: none; font-size: 22px; }
   .headline, .subtext { transform: none; font-size: 18px; padding: 0 14px; }
 }
+
 
 
 
