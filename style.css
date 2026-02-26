@@ -211,6 +211,14 @@ body {
   background: #5d1b74;
 }
 
+.themedComponent_mlkZ.themedComponent--dark_xIcU {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -271,6 +279,9 @@ body {
 }
 
 .modal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 14px;
