@@ -51,7 +51,7 @@ body {
 
 .generate-btn {
   border: 0;
-  background: #4f46e5;
+  background: #4b5cf0;
   color: #ffffff;
   font-weight: 600;
   font-size: 12px;
@@ -65,7 +65,7 @@ body {
 }
 
 .generate-btn:hover {
-  background: #4338ca;
+  background: #3f4ee0;
 }
 
 .btn-icon {
@@ -124,6 +124,7 @@ body {
   .brand h1 { transform: none; font-size: 22px; }
   .headline, .subtext { transform: none; font-size: 18px; padding: 0 14px; }
 }
+
 
 
 
