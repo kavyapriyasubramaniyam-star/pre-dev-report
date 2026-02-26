@@ -36,17 +36,16 @@ body {
 
 
 .logo-icon {
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   object-fit: contain;
 }
 
 .brand h1 {
   margin: 0;
-  font-size: 40px;
+  font-size: 19px;
   font-weight: 700;
-  transform: scale(0.5);
-  transform-origin: left center;
+  color: #4338f2;
 }
 
 .generate-btn {
@@ -87,27 +86,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 18px;
   text-align: center;
+  padding-top: 180px;
 }
 
-.icon-wrap {
-  display: grid;
-  place-items: center;
-}
-
-
-.center-logo {
-  width: 88px;
-  height: 88px;
-  object-fit: contain;
+.hero-title {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: #4338f2;
 }
 
 .headline {
   margin: 0;
-  font-size: 35px;
-  transform: scale(0.5);
+  font-size: 17px;
   color: #4b5f7a;
 }
 
@@ -118,15 +112,16 @@ body {
 
 .subtext {
   margin: 0;
-  font-size: 31px;
-  transform: scale(0.5);
+  font-size: 15px;
   color: #b1bccf;
 }
 
 @media (max-width: 700px) {
   .topbar { padding: 12px 16px; height: auto; gap: 10px; flex-wrap: wrap; }
-  .brand h1 { transform: none; font-size: 22px; }
-  .headline, .subtext { transform: none; font-size: 18px; padding: 0 14px; }
+  .brand h1 { font-size: 22px; }
+  .hero { padding-top: 110px; }
+  .hero-title { font-size: 30px; }
+  .headline, .subtext { font-size: 18px; padding: 0 14px; }
 }
 
 
