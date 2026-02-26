@@ -51,25 +51,29 @@ body {
 
 .generate-btn {
   border: 0;
-  background: #4b5cf0;
+  background: #4338f2;
   color: #ffffff;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 1;
-  border-radius: 8px;
-  padding: 10px 14px;
+  font-size: 15px;
+  line-height: 1.1;
+  border-radius: 10px;
+  padding: 12px 18px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 9px;
   cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
 }
 
 .generate-btn:hover {
-  background: #3f4ee0;
+  background: #3b31e6;
 }
 
 .btn-icon {
-  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
   line-height: 1;
 }
 
