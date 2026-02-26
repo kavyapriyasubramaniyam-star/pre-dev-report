@@ -71,15 +71,29 @@
       </div>
 
       <div class="report-actions">
-        <button type="button" class="action-btn download-btn">⬇ Download Report (.doc)</button>
-        <button type="button" class="action-btn slack-btn">✣ Send to Slack</button>
+        <button type="button" class="action-btn download-btn">&#11015; Download Report (.doc)</button>
+        <button type="button" class="action-btn slack-btn" id="sendSlackBtn">&#10023; Send to Slack</button>
       </div>
     </section>
   </main>
 
+  <div class="modal-overlay hidden" id="slackModalOverlay">
+    <div class="slack-modal" role="dialog" aria-modal="true" aria-labelledby="slackModalTitle">
+      <div class="slack-modal-header">
+        <span class="slack-icon">&#10023;</span>
+        <h3 id="slackModalTitle">Send to Slack</h3>
+      </div>
+      <p class="slack-modal-text">This will send the Pre-Dev Health Report to your configured Slack channel. Do you want to proceed?</p>
+      <div class="slack-modal-actions">
+        <button type="button" class="modal-btn modal-no" id="slackNoBtn">No</button>
+        <button type="button" class="modal-btn modal-yes" id="slackYesBtn">Yes, Send</button>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
