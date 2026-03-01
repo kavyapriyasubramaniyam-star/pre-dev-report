@@ -10,7 +10,11 @@ const slackModalOverlay = document.getElementById("slackModalOverlay");
 const slackNoBtn = document.getElementById("slackNoBtn");
 const slackYesBtn = document.getElementById("slackYesBtn");
 
-const BACKEND_BASE_URL = window.BACKEND_BASE_URL || "http://127.0.0.1:8001";
+const REPORT_ENDPOINT =
+  window.REPORT_ENDPOINT ||
+  (window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost"
+    ? "http://127.0.0.1:8001/generate-report"
+    : "/api/generate-report");
 
 if (generateBtn && hero && heroIntro && reportCard) {
   generateBtn.addEventListener("click", async () => {
@@ -24,7 +28,7 @@ if (generateBtn && hero && heroIntro && reportCard) {
     generateBtn.disabled = true;
 
     try {
-      const response = await fetch(`${BACKEND_BASE_URL}/generate-report`, {
+      const response = await fetch(REPORT_ENDPOINT, {
         method: "POST",
       });
 
